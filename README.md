@@ -10,3 +10,24 @@ A smart calculator designed to evaluate student grades based on their test, assi
 - Display Results: The program prints the total score, average score, pass/fail result, and award status.
 
 Follow the prompts to enter the test score, assignment score, and exam score. The program will display the total score, average score, pass/fail result, and award status.
+
+## How to run the program
+
+- Clone the Repository: 
+``` 
+git clone https://github.com/kodeima/Smart-Calculator-for-Student-Grades
+```
+- Navigate to the Directory:
+```
+cd smart_calculator_student_grades
+```
+- Run the program:
+```
+python calculator_student_grades.py
+```
+- Input scores
+- View results
+
+## Required Libraries
+
+This program does not require any additional libraries beyond the standard Python library. It uses basic Python features such as input, arithmetic operations, and conditional statements.
