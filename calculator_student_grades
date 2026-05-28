@@ -1,0 +1,40 @@
+# Smart calculator for student grades
+
+#function to calculate total and average scores
+def calculate_scores(test_score, assignment_score, exam_score):
+    total_score = test_score + assignment_score + exam_score
+    average_score = total_score / 3
+    return total_score, average_score
+
+#function to find if student passed or failed
+def find_pass_fail(average_score):
+    if average_score >= 50:
+        return "Passed"
+    else:
+        return "Failed"
+    
+#function to check if student qualifies for an award
+def check_award(average_score):
+    if average_score >= 95:
+        return "Qualifies for an award"
+    else:
+        return "Does not qualify for an award"
+    
+#main function to get user input
+def main():
+    test_score = float(input("Enter test score: "))
+    assignment_score = float(input("Enter assignment score: "))
+    exam_score = float(input("Enter exam score:"))
+
+    total_score, average_score = calculate_scores(test_score, assignment_score, exam_score)
+    pass_fail = find_pass_fail(average_score)
+    award_status = check_award(average_score)
+
+    #display results
+    print(f"Total score: {total_score}")
+    print(f"Average score: {average_score}")
+    print(f"Result: {pass_fail}")
+    print(f"Award status: {award_status}")
+
+if __name__ == "__main__":
+    main()
